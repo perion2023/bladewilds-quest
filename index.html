@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blade Wilds: Raids</title>
+    <style>html,body{background:#000;margin:0}#boot{z-index:10000;background:#000;flex-direction:column;justify-content:center;align-items:center;gap:22px;transition:opacity .7s;display:flex;position:fixed;inset:0}#boot.done{opacity:0;pointer-events:none}#boot .flash{flex-direction:column;align-items:center;gap:18px;animation:1.6s ease-in-out infinite boot-flash;display:flex}#boot svg{filter:drop-shadow(0 0 18px #e8c66a40);width:min(34vmin,220px);height:auto}#boot h1{letter-spacing:.14em;text-transform:uppercase;color:#f2efe6;white-space:nowrap;margin:0;font:800 clamp(30px,7vmin,56px)/1 Segoe UI,system-ui,-apple-system,sans-serif}#boot h1 span{color:#e8c66a}@keyframes boot-flash{0%,to{opacity:.18}50%{opacity:1}}@media (prefers-reduced-motion:reduce){#boot .flash{animation:none}}</style>
+    <script type="module" crossorigin src="./assets/index-BN21hmxb.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-ynv_rKVV.css">
+  </head>
+  <body>
+    <div id="boot" aria-label="Loading Blade Wilds: Raids" role="status">
+      <div class="flash">
+        <svg viewBox="22 8 156 164" aria-hidden="true">
+          <defs>
+            <linearGradient id="bw-steel" x1="0" x2="1">
+              <stop offset="0" stop-color="#f4f6fa" />
+              <stop offset="0.5" stop-color="#c9ced8" />
+              <stop offset="1" stop-color="#8e95a3" />
+            </linearGradient>
+            <linearGradient id="bw-gold" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f3d27a" />
+              <stop offset="1" stop-color="#b8892f" />
+            </linearGradient>
+            <!-- one sword, tip up; the pair crosses on the blades at (100, 80), guards apart like the app icon -->
+            <g id="bw-sword">
+              <path d="M100 6 L110 24 L110 126 L90 126 L90 24 Z" fill="url(#bw-steel)" />
+              <path d="M100 22 L100 122" stroke="#a9afbb" stroke-width="2.5" />
+              <rect x="95" y="134" width="10" height="28" rx="2" fill="#5a3a1f" />
+              <rect x="70" y="124" width="60" height="13" rx="6.5" fill="url(#bw-gold)" />
+              <circle cx="100" cy="168" r="9" fill="url(#bw-gold)" />
+            </g>
+          </defs>
+          <use href="#bw-sword" transform="rotate(-42 100 80)" />
+          <use href="#bw-sword" transform="rotate(42 100 80)" />
+        </svg>
+        <h1>Blade <span>Wilds</span></h1>
+      </div>
+    </div>
+    <div id="app"></div>
+  </body>
+</html>
